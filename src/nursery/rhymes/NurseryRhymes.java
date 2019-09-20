@@ -15,34 +15,65 @@ public class NurseryRhymes {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Old MacDonald had a farm");
-        
+        System.out.println("Here's a little Nursery Rhyme for your kids:");
+        System.out.println("");
         farm("cow", "moo");
+        System.out.println("");
+        System.out.println("");
         farm("duck", "quack");
+        System.out.println("");
+        System.out.println("");
         farm("turkey", "glu");
         System.out.println("");
         System.out.println("");
+      
         monkeys(10);
+        System.out.println("");
         System.out.println("");
         monkeys(9);
         System.out.println("");
+        System.out.println("");
         monkeys(8);
+        System.out.println("");
         System.out.println("");
         
         hickory_dickory(1);
         System.out.println("");
+        System.out.println("");
         hickory_dickory(2);
         System.out.println("");
+        System.out.println("");
         hickory_dickory(3);
+        System.out.println("");
         System.out.println("");
         
         milk(99);
         System.out.println("");
+        System.out.println("");
         milk(98);
+        System.out.println("");
         System.out.println("");
         milk(97);
         System.out.println("");
-        // TODO: call your new methods here ( you must write them first! ) 
+        System.out.println("");
+    
+        bingo("B-I-N-G-O");
+        System.out.println("");
+        System.out.println("");
+        bingo("B-I-N-G-O");
+        System.out.println("");
+        System.out.println("");
+        
+        frogs(3);
+        System.out.println("");
+        System.out.println("");
+        frogs(2);
+        System.out.println("");
+        System.out.println("");
+        frogs(1);
+        System.out.println("");
+        System.out.println("");
+        
         
         
     }
@@ -60,7 +91,6 @@ public class NurseryRhymes {
                         +"Everywhere a "+sound+" "+sound+" \n"
                         +"Old MacDonald had a farm \n"
                         +"e-i-e-i-o");
-        System.out.println("");
     }
     
     public static void monkeys(int number){
@@ -68,11 +98,14 @@ public class NurseryRhymes {
                                +"One fell off and bumped his head \n"
                                +"Mama called the doctor, and the doctor said: \n"
                                +"\"No more jumping on the bed!\"");
-        System.out.println("");
     }
     
     public static void hickory_dickory(int time){
-        System.out.println(time);
+        System.out.print("Hickory dickory dock \n"
+                        +"The mouse ran up the clock \n"
+                        +"The clock struck "+time+"\n"
+                        +"The mouse ran down \n"
+                        +"Hickory dickory dock");
     }
     
     public static void milk(int bottles){
@@ -80,7 +113,6 @@ public class NurseryRhymes {
                         +bottles +" bottles of milk \n"
                         +         "Take one down and pass it around \n");
                         bottles -= 1;
-                        
         System.out.print (bottles+ " bottles of milk on the wall");
     }
     
@@ -93,5 +125,26 @@ public class NurseryRhymes {
                         +"And you turn yourself about \n"
                         +"That's what it's all about!");
     }
+    
+   public static void bingo(String name){
+       System.out.print("There was a farmer who had a dog \n"
+                       +"And Bingo was his name-o \n"
+                       +""+name+"\n"
+                       +""+name+"\n"
+                       +""+name+"\n"
+                       +"And Bingo was his name-o");
+   }
+   
+   public static void frogs(int num){
+       System.out.print(num+" little speckled frogs \n"
+                           +"sitting in a speclked log \n"
+                           +"eating the most delicious bugs \n"
+                           +"yum, yum \n"
+                           +"one jumped into the pool \n"
+                           +"where it is nice and cool");
+       num -= 1;
+       System.out.print(    "now there are " +num+ " little speckled frogs! \n"
+                           +"ribbit, ribbit");
+   }
     
 }
